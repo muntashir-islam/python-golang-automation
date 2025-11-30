@@ -1,0 +1,29 @@
+{
+  "Reservations": [
+    {
+      "Instances": [
+        {
+          "InstanceId": "i-0abc123def456",
+          "InstanceType": "t2.micro",
+          "State": {"Name": "running"},
+          "PublicIpAddress": "3.45.67.89"
+        },
+        {
+          "InstanceId": "i-0def456abc789",
+          "InstanceType": "t3.medium",
+          "State": {"Name": "stopped"}
+        }
+      ]
+    },
+    {
+      "Instances": [
+        {
+          "InstanceId": "i-0xyz987uvw654",
+          "InstanceType": "t2.large",
+          "State": {"Name": "running"},
+          "PublicIpAddress": "18.23.45.67"
+        }
+      ]
+    }
+  ]
+}

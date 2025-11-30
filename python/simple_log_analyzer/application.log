@@ -1,0 +1,5 @@
+2025-01-01 12:00:00 INFO User logged in
+2025-01-01 12:01:00 ERROR Database connection failed
+2025-01-01 12:02:00 WARNING Low memory
+2025-01-01 12:03:00 ERROR Timeout occurred
+2025-01-01 12:04:00 INFO Task completed

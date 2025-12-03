@@ -2,10 +2,9 @@
 #Stores the valid key-value pairs in a dictionary.
 #Ignores lines that are empty or start with # (comments).
 #Raises an error (or prints a warning) if a line is missing the = separator.
-
-def validateFile(filePath):
+def validate_file(file_path):
     config = {}
-    with open(filePath, 'r') as file:
+    with open(file_path, 'r') as file:
         content = file.readlines()
         for line_num, line in enumerate(content, 1):
             line = line.strip()
@@ -22,6 +21,6 @@ def validateFile(filePath):
     return config
 
 
-parsed_config = validateFile('example.txt')
+parsed_config = validate_file('example.txt')
 print("\n--- Parsed Config ---")
 print(parsed_config)

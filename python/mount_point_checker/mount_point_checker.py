@@ -2,6 +2,7 @@ import psutil
 
 THRESHOLD = 80
 
+
 def check_all_disks():
     partitions = psutil.disk_partitions()
 
@@ -16,6 +17,7 @@ def check_all_disks():
 
         except PermissionError:
             pass  # skip system-protected mounts
+
 
 if __name__ == "__main__":
     check_all_disks()

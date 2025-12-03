@@ -4,6 +4,7 @@ import sys
 TARGET_DIR = sys.argv[1]
 FILE_SIZE_MB = int(sys.argv[2])
 
+
 def large_file_cleanup(target_dir, file_size_mb):
     max_size_bytes = file_size_mb * 1024 * 1024
 
@@ -18,6 +19,7 @@ def large_file_cleanup(target_dir, file_size_mb):
                     os.remove(file_path)
             except Exception as e:
                 print(f"Error with {file_path}: {e}")
+
 
 if __name__ == "__main__":
     large_file_cleanup(TARGET_DIR, FILE_SIZE_MB)
